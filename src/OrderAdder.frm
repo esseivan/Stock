@@ -13,6 +13,7 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
+
 ' Name : Order adder
 ' Author : Esseiva Nicolas
 ' Last modification : 05.02.19
@@ -113,10 +114,15 @@ End Sub
 ' Load file
 Private Sub btnChooseFile_Click()
     loadFile
+    runReader
 End Sub
 
 ' Clear sheet
 Private Sub btnClearPage_Click()
+    runCleaner
+End Sub
+
+Private Sub runCleaner()
     Dim ws As Worksheet
     Set ws = Worksheets("OrderAdder_work")
     Dim RowCount As Integer
@@ -141,6 +147,11 @@ End Sub
 
 ' Read file
 Private Sub btnReadFile_Click()
+    runReader
+End Sub
+
+Private Sub runReader()
+    runCleaner
     Workbook_Open
     Worksheets("OrderAdder").Select
     lblStatus.Caption = "Read complete !"

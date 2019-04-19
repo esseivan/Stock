@@ -10,6 +10,7 @@ StockManager.Show
 End Sub
 
 Sub btn_AddOrder()
+Attribute btn_AddOrder.VB_ProcData.VB_Invoke_Func = "m\n14"
 OrderAdder.Show
 End Sub
 

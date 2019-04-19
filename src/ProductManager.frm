@@ -14,6 +14,7 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 
+
 ' Name : Product manager
 ' Author : Esseiva Nicolas
 ' Last modification : 05.02.19
