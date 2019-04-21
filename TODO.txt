@@ -1,0 +1,2 @@
+Ajouter fonction pour ajouter des articles existants aux listes de produits
+On sélectionne le produit voulu avec une fenêtre similaire à la liste des artiles mais avec un seul bouton, ajouter
